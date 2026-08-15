@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap');
+@import "tailwindcss";
+
+:root {
+  /* Brand Colors */
+  --primary: #2B3E5F;
+  --primary-light: #3d5580;
+  --primary-dark: #1e2d45;
+  --accent: #E0C58F;
+  --accent-light: #ead4a8;
+  --accent-dark: #c8a96a;
+
+  /* Neutrals */
+  --bg-main: #F5F0E9;
+  --bg-alt: #D9CBC2;
+  --bg-white: #FAFAF7;
+  --text-dark: #1A1A1A;
+  --text-mid: #4A4A4A;
+  --text-light: #6B6B6B;
+  --text-white: #F5F0E9;
+
+  /* Spacing scale (4pt) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-24: 96px;
+  --space-32: 128px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-dark);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Sora', sans-serif;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
